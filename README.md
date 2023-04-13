@@ -1,6 +1,6 @@
 # books_on_rails
 
-> And API to support the React UI for the (My Bookshelf)[https://github.com/liztownd/mybookshelf.git] app.
+> An API to support the React UI for the My Bookshelf app [https://github.com/liztownd/mybookshelf.git].
 
 ## Database initialization and local development
 
@@ -16,7 +16,7 @@ Ensure your local  `mysql` database is running and run
 rails db:create db:migrate db:seed
 ```
 
-After starting the server (by using the command `rails s`) navigate to (http://localhost:3000/api/v1/users)[http://localhost:3000/api/v1/users] to view the JSON output of the "get all users" command. There should be one entry.
+After starting the server (by using the command `rails s`) navigate to [http://localhost:3000/api/v1/users] to view the JSON output of the "get all users" command. There should be one entry.
 
 ## Deployment
 
