@@ -10,29 +10,18 @@ user = User.create({email: "guest@example.com"})
 
 Book.create([
     {
-        book_id: "ACA4ugEACAAJ",
-        title: "The Book of the Flower",
-        subtitle: "Flowers in Art",
-        publishedDate: "2019-04-02",
-        description: "\"Art is the flower, life is the green leaf\"—Charles Rennie Mackintosh Haphazard bunches, formal bouquets, chance arrangements, quiet and thoughtful rural encounters—The Book of the Flower is a sylvan collection of beautiful depictions of flowers by artists, photographers, and illustrators. Interspersed through the illustrations are short texts about the artists and their interest in particular flowers, from Georgia O'Keeffe's sumptuous close-ups of Jimson Weed and cactus flowers to Matisse's roses, Keika Hasegawa's chrysanthemums, and Albert York's close study of zinnias. A wonderful collection for art-lovers, gardeners, and flower-fanciers.",
-        smallThumbnail: "http://books.google.com/books/content?id=ACA4ugEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        thumbnail: "http://books.google.com/books/content?id=ACA4ugEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-        infoLink: "http://books.google.com/books?id=ACA4ugEACAAJ&dq=%3Dflowers&hl=&source=gbs_api",
-        rating: 0,
-        read: false,
-    },
-    {
         book_id: "KouQDwAAQBAJ",
         thumbnail: "http://books.google.com/books/content?id=KouQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
         smallThumbnail: "http://books.google.com/books/content?id=KouQDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
         title: "Come Tumbling Down",
-        subtitle: null,
+        subtitle: "",
         publishedDate: "2020-01-07",
         description: "The fifth installment in New York Times bestselling author Seanan McGuire's award-winning Wayward Children series, Come Tumbling Down picks up the threads left dangling by Every Heart a Doorway and Down Among the Sticks and Bones When Jack left Eleanor West's School for Wayward Children she was carrying the body of her deliciously deranged sister—whom she had recently murdered in a fit of righteous justice—back to their home on the Moors. But death in their adopted world isn't always as permanent as it is here, and when Jack is herself carried back into the school, it becomes clear that something has happened to her. Something terrible. Something of which only the maddest of scientists could conceive. Something only her friends are equipped to help her overcome. Eleanor West's \"No Quests\" rule is about to be broken. Again. The Wayward Children Series Book 1: Every Heart a Doorway Book 2: Down Among the Sticks and Bones Book 3: Beneath the Sugar Sky Book 4: In an Absent Dream Book 5: Come Tumbling Down At the Publisher's request, this title is being sold without Digital Rights Management Software (DRM) applied.",
         infoLink: "https://play.google.com/store/books/details?id=KouQDwAAQBAJ&source=gbs_api",
         rating: 5,
         read: true,
         authors: "Seanan McGuire",
+        user_id: user.id
     },
     {
         book_id: "p1v6DwAAQBAJ",
@@ -46,6 +35,7 @@ Book.create([
         rating: 0,
         read: true,
         authors: "Marijn Haverbeke",
+        user_id: user.id
     },
     {
         book_id: "7k6RQgAACAAJ",
@@ -59,5 +49,6 @@ Book.create([
         rating: 0,
         read: false,
         authors: "Agatha Christie",
+        user_id: user.id
     }
 ])
