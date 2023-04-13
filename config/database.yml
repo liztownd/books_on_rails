@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
-  database: book_api_production
-  username: book_api
-  password: <%= ENV["BOOK_API_DATABASE_PASSWORD"] %>
+  url: <% ENV["JAWSDB_URL"] %>
+  # database: book_api_production
+  # username: book_api
+  # password: <%= ENV["BOOK_API_DATABASE_PASSWORD"] %>
