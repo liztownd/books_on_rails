@@ -13,11 +13,9 @@ default: &default
   adapter: postgresql
   host: localhost
   encoding: unicode
-  # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: newuser
   password: <% ENV["PG_PASSWORD"] %>
   socket: /tmp/mysql.sock
-  # host: http://127.0.0.1:3306
 
 development:
   <<: *default
@@ -52,7 +50,6 @@ test:
 #
 production:
   <<: *default
-  url: <% ENV["JAWSDB_URL"] %>
-  database: dl48l5x3t785ws0y
-  # username: book_api
-  # password: <%= ENV["BOOK_API_DATABASE_PASSWORD"] %>
+  database: book_api_test
+  username: book_api
+  password: <%= ENV["BOOK_API_DATABASE_PASSWORD"] %>
