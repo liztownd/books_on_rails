@@ -3,8 +3,7 @@ class Api::V1::BooksController < ApplicationController
 
   # GET /books
   def index
-    @books = Book.all
-
+    @books = Book.where(user_id: params[:user_id])
     render json: @books
   end
 
