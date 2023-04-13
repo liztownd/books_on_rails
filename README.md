@@ -1,24 +1,23 @@
-# README
+# books_on_rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> And API to support the React UI for the (My Bookshelf)[https://github.com/liztownd/mybookshelf.git] app.
 
-Things you may want to cover:
+## Database initialization and local development
 
-* Ruby version
+The api uses `mysql` for the database. For local development, install all dependencies by running
 
-* System dependencies
+```bash
+bundle
+```
 
-* Configuration
+Ensure your local  `mysql` database is running and run
 
-* Database creation
+```bash
+rails db:create db:migrate db:seed
+```
 
-* Database initialization
+After starting the server (by using the command `rails s`) navigate to (http://localhost:3000/api/v1/users)[http://localhost:3000/api/v1/users] to view the JSON output of the "get all users" command. There should be one entry.
 
-* How to run the test suite
+## Deployment
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The API is deployed at `url`. You can access the UI at `url`.
